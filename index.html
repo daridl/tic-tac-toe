@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хрестики-нулики</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="game.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Хрестики-нулики</h1>
+    </header>
+
+    <main>
+        <p>Чия черга</p>
+        <div class="gameboard">
+            <div class="gamecell" data-position="0"></div>
+            <div class="gamecell" data-position="1"></div>
+            <div class="gamecell" data-position="2"></div>
+            <div class="gamecell" data-position="3"></div>
+            <div class="gamecell" data-position="4"></div>
+            <div class="gamecell" data-position="5"></div>
+            <div class="gamecell" data-position="6"></div>
+            <div class="gamecell" data-position="7"></div>
+            <div class="gamecell" data-position="8"></div>
+        </div>
+        <button type="button">Нова гра</button>
+    </main>
+
+    <dialog class="names-dialog">
+        <form>
+            <p class="title">Розпочнімо гру!</p>
+            <p class="player-name">
+                <label for="name1">Ім'я Гравця 1:</label>
+                <input type="text" name="name1" id="name1" maxlength="15" required>
+            </p>
+            <p class="player-name">
+                <label for="name2">Ім'я Гравця 2:</label>
+                <input type="text" name="name2" id="name2" maxlength="15" required>
+            </p>
+            <button>Підтвердити</button>
+        </form>
+    </dialog>
+
+    <dialog class="result-dialog">
+        <h1>Гравець X переміг!</h1>
+    </dialog>
+
+    <footer>
+        <p>Створила Загатіна Д.О. 1КН-23б</p>
+    </footer>
+</body>
+</html>
